@@ -59,9 +59,7 @@
                     </div>
 
                     <div class="card-footer col-12">
-
-                            <a href="{{ route('home') }}" class="btn btn-danger">Batal</a>
-
+                        <a href="{{ route('home') }}" class="btn btn-danger">Batal</a>
                         <button type="submit" onclick="return confirm('Update data arsip ?')" class="btn btn-success">
                           Update
                         </button>

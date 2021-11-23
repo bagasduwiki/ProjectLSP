@@ -42,7 +42,7 @@
                           <td>{{ $data->judul }}</td>
                           <td>{{ $data->created_at }}</td>
                           <td>
-                            <form action="{{ url('hapus'.$data->id) }}" method="post" class="d-inline">
+                            <form action="{{ url('hapus/'.$data->id) }}" method="post" class="d-inline">
                               @method('delete')
                               @csrf
                               <button onclick="return confirm('Apakah anda yakin akan menghapus surat ini ?')" class="btn btn-danger btn-sm">Hapus</button>

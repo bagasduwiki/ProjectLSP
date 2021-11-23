@@ -14,7 +14,6 @@
                     <h6><li>Gunakan file berformat PDF</li></h6>
                 </div></br>
 
-
                 <div class="card-body">
                   <!-- FUNGSI ALERT -->
                     @if (session('status'))
@@ -62,16 +61,13 @@
                         <div class="col col-md-2"><label for="text-input" class=" form-control-label">Judul</label></div>
                         <div class="col-12 col col-md-8"><input type="text" id="text-input" name="judul" placeholder="Isi Judul Surat disini..." class="form-control" required></div>
                     </div>
-
                     <div class="row form-group">
                         <div class="col col-md-2"><label for="file-input" class=" form-control-label">File input</label></div>
                         <div class="col-12 col-md-4"><input type="file" accept="application/pdf" id="file-input" name="file" class="form-control-file" required></div>
                     </div>
 
                     <div class="card-footer col-12">
-
-                            <a href="{{ route('home') }}" class="btn btn-primary"><< Kembali</a>
-
+                        <a href="{{ route('home') }}" class="btn btn-primary"><< Kembali</a>
                         <button type="submit" onclick="return confirm('Simpan data arsip ?')" class="btn btn-success">
                           Simpan
                         </button>

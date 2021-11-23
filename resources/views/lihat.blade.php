@@ -17,16 +17,14 @@
                     <h6>Waktu Unggah : {{$data->created_at}}</h6>
                 </div>
                 </br>
-
                 <div class="card-body">
-                    <iframe style="overflow:hidden;height:600;width:100%" height="600" width="100%" src="/assets/{{ $data->file }}"></iframe>
+                    <iframe style="overflow:hidden;height:600;width:100%" height="500" width="100%" src="/assets/{{ $data->file }}"></iframe>
                 </div>
                      {{-- @endforeach --}}
                 <div class="card-footer col-12">
                     <a href="{{ route('home') }}" class="btn btn-primary"><< Kembali</a>
                     <a href="{{ route('download', $data->file) }}" class="btn btn-warning">Unduh</a>
                     <a href="{{ route('edit', $data->id) }}" class="btn btn-success"> Edit/Ganti File</a>
-
             </div>
           </div>
         </div>

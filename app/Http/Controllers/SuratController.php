@@ -49,7 +49,6 @@ class SuratController extends Controller
       $data->judul=$request->judul;
       $data->save();
 
-      // return $request;
       return redirect()->back()->with('status', 'Data berhasil disimpan !');
   }
 
@@ -85,7 +84,7 @@ class SuratController extends Controller
         return redirect()->back()->with('status', 'Data berhasil diupdate !');
     }
 
-  public function hapusSurat($id) //Controller menghapus data surat
+  public function hapus($id) //Controller menghapus data surat
   {
     DB::table('data')->where('id',$id)->delete();
     return redirect('home')->with('status', 'Data berhasil dihapus !');
